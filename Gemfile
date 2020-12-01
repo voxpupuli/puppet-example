@@ -1,5 +1,7 @@
 source ENV['GEM_SOURCE'] || "https://rubygems.org"
 
+gem 'rspec-github', :require => false, :groups => [:test, :system_tests]
+
 group :test do
   gem 'voxpupuli-test', '~> 2.1',  :require => false
   gem 'coveralls',                 :require => false

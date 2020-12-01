@@ -1,1 +1,2 @@
+--format RSpec::Github::Formatter
 --format progress
