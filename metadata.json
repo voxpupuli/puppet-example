@@ -19,23 +19,8 @@
   ],
   "operatingsystem_support": [
     {
-      "operatingsystem": "ArchLinux"
-    },
-    {
       "operatingsystem": "CentOS",
-      "operatingsystemrelease": ["7", "8"]
-    },
-    {
-      "operatingsystem": "Debian",
-      "operatingsystemrelease": ["9", "10"]
-    },
-    {
-      "operatingsystem": "RedHat",
-      "operatingsystemrelease": ["7", "8"]
-    },
-    {
-      "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": ["18.04", "20.04"]
+      "operatingsystemrelease": ["7"]
     }
   ]
 }
