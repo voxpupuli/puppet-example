@@ -45,6 +45,9 @@ jobs:
           bundler-cache: true
       - name: Run tests
         run: bundle exec rake
+      - name: Report jUnit Annotations as Github Actions Annotations
+        if: always()
+        uses: shyim/junit-report-annotations-action@0.2.0
 
   acceptance:
     needs: setup_matrix
@@ -73,3 +76,6 @@ jobs:
         env:
           BEAKER_PUPPET_COLLECTION: ${{ matrix.puppet.collection }}
           BEAKER_setfile: ${{ matrix.setfile.value }}
+      - name: Report jUnit Annotations as Github Actions Annotations
+        if: always()
+        uses: shyim/junit-report-annotations-action@0.2.0
