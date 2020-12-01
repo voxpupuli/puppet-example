@@ -50,4 +50,4 @@ jobs:
         if: always()
       - name: Report jUnit Annotations as Github Actions Annotations
         if: always()
-        uses: shyim/junit-report-annotations-action@0.2.0
+        uses: ekohl/junit-report-annotations-action@handle-testsuite-at-top-level
