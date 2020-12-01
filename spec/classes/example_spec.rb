@@ -7,6 +7,7 @@ describe 'example' do
 
       it { is_expected.to compile.with_all_deps }
       it { is_expected.to contain_file('/tmp/puppet-example').with_content('Hello World!') }
+      it { is_expected.not_to compile }
     end
   end
 end

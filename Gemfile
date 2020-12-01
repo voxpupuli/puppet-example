@@ -4,6 +4,7 @@ group :test do
   gem 'voxpupuli-test', '~> 2.1',  :require => false
   gem 'coveralls',                 :require => false
   gem 'simplecov-console',         :require => false
+  gem 'rspec_junit_formatter',     :require => false
 end
 
 group :development do
