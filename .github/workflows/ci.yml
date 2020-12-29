@@ -7,8 +7,9 @@ jobs:
     name: 'Setup Test Matrix'
     runs-on: ubuntu-latest
     outputs:
-      beaker_setfiles: ${{ steps.get-outputs.outputs.beaker_setfiles }}
-      puppet_major_versions: ${{ steps.get-outputs.outputs.puppet_major_versions }}
+      beaker_setfile_values: ${{ fromJson(steps.get-outputs.outputs.beaker_setfile_values) }}
+      beaker_setfile_names: ${{ fromJson(steps.get-outputs.outputs.beaker_setfile_labels) }}
+      puppet_major_version_numbers: ${{ fromJson(steps.get-outputs.outputs.puppet_major_versions) }}
       puppet_unit_test_matrix: ${{ steps.get-outputs.outputs.puppet_unit_test_matrix }}
     env:
       BUNDLE_WITHOUT: development:test:release
@@ -54,9 +55,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        setfile: ${{fromJson(needs.setup_matrix.outputs.beaker_setfiles)}}
-        puppet: ${{fromJson(needs.setup_matrix.outputs.puppet_major_versions)}}
-    name: ${{ matrix.puppet.name }} - ${{ matrix.setfile.name }}
+        setfile: ${{ needs.setup_matrix.outputs.beaker_setfile_names }}
+        puppet: ${{ needs.setup_matrix.outputs.puppet_major_version_numbes }}
+        exclude:
+          - setfile: Ubuntu 20.04
+            puppet: 5
+    name: Puppet ${{ matrix.puppet }} - ${{ matrix.setfile }}
     steps:
       - name: Enable IPv6 on docker
         run: |
@@ -71,5 +75,5 @@ jobs:
       - name: Run tests
         run: bundle exec rake beaker
         env:
-          BEAKER_PUPPET_COLLECTION: ${{ matrix.puppet.collection }}
-          BEAKER_setfile: ${{ matrix.setfile.value }}
+          BEAKER_PUPPET_COLLECTION: puppet${{ matrix.puppet }}
+          BEAKER_setfile: ${{ needs.setup_matrix.outputs.beaker_setfile_values[matrix.setfile] }}

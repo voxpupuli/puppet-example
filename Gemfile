@@ -12,7 +12,7 @@ group :development do
 end
 
 group :system_tests do
-  gem 'puppet_metadata', '~> 0.3.0',  :require => false
+  gem 'puppet_metadata', github: 'ekohl/puppet_metadata', branch: 'beaker-setfiles-split'
   gem 'voxpupuli-acceptance',         :require => false
 end
 
