@@ -60,7 +60,7 @@ jobs:
         exclude:
           - os: Ubuntu 20.04
             puppet: 5
-    name: Puppet ${{ matrix.puppet }} - ${{ matrix.setfile }}
+    name: Puppet ${{ matrix.puppet }} - ${{ matrix.os }}
     steps:
       - name: Enable IPv6 on docker
         run: |
