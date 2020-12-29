@@ -9,7 +9,7 @@ jobs:
     outputs:
       beaker_setfile_values: ${{ steps.get-outputs.outputs.beaker_setfile_values }}
       beaker_setfile_names: ${{ steps.get-outputs.outputs.beaker_setfile_names }}
-      puppet_major_version_numbers: ${{ steps.get-outputs.outputs.puppet_major_versions }}
+      puppet_major_version_numbers: ${{ steps.get-outputs.outputs.puppet_major_version_numbers }}
       puppet_unit_test_matrix: ${{ steps.get-outputs.outputs.puppet_unit_test_matrix }}
     env:
       BUNDLE_WITHOUT: development:test:release
