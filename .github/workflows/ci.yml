@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       beaker_setfile_values: ${{ steps.get-outputs.outputs.beaker_setfile_values }}
-      beaker_setfile_names: ${{ steps.get-outputs.outputs.beaker_setfile_labels }}
+      beaker_setfile_labels: ${{ steps.get-outputs.outputs.beaker_setfile_labels }}
       puppet_major_version_numbers: ${{ steps.get-outputs.outputs.puppet_major_versions }}
       puppet_unit_test_matrix: ${{ steps.get-outputs.outputs.puppet_unit_test_matrix }}
     env:
@@ -55,10 +55,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        setfile: ${{ fromJson(needs.setup_matrix.outputs.beaker_setfile_names) }}
-        puppet: ${{ fromJson(needs.setup_matrix.outputs.puppet_major_version_numbes) }}
+        os: ${{ fromJson(needs.setup_matrix.outputs.beaker_setfile_labels) }}
+        puppet: ${{ fromJson(needs.setup_matrix.outputs.puppet_major_version_numbers) }}
         exclude:
-          - setfile: Ubuntu 20.04
+          - os: Ubuntu 20.04
             puppet: 5
     name: Puppet ${{ matrix.puppet }} - ${{ matrix.setfile }}
     steps:
@@ -76,4 +76,4 @@ jobs:
         run: bundle exec rake beaker
         env:
           BEAKER_PUPPET_COLLECTION: puppet${{ matrix.puppet }}
-          BEAKER_setfile: ${{ fromJson(needs.setup_matrix.outputs.beaker_setfile_values)[matrix.setfile] }}
+          BEAKER_setfile: ${{ fromJson(needs.setup_matrix.outputs.beaker_setfile_values)[matrix.os] }}
