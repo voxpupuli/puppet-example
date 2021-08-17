@@ -27,7 +27,7 @@
     },
     {
       "operatingsystem": "Debian",
-      "operatingsystemrelease": ["9", "10"]
+      "operatingsystemrelease": ["10", "11"]
     },
     {
       "operatingsystem": "RedHat",
