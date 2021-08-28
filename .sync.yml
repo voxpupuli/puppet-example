@@ -3,3 +3,4 @@ spec/spec_helper_acceptance.rb:
   unmanaged: false
 vpt:
   enabled: false
+  comment_on_merge_conflict: false
