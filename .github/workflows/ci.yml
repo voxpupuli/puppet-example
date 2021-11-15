@@ -4,7 +4,10 @@
 
 name: CI
 
-on: pull_request
+on:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * *'
 
 concurrency:
   group: ${{ github.ref_name }}
