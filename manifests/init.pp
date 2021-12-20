@@ -10,7 +10,7 @@ class example (
   file { $file:
     ensure  => file,
     owner   => 'root',
-    group   => 'root',
+    group  => 'root',
     mode    => '0644',
     content => $content,
   }
