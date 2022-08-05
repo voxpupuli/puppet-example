@@ -31,4 +31,6 @@ gem 'facter', ENV['FACTER_GEM_VERSION'], :require => false, :groups => [:test]
 puppetversion = ENV['PUPPET_VERSION'] || '>= 6.0'
 gem 'puppet', puppetversion, :require => false, :groups => [:test]
 
+gem 'puppetlabs_spec_helper', github: 'ekohl/puppetlabs_spec_helper', branch: 'add-rspec-github-integration'
+
 # vim: syntax=ruby
