@@ -6,6 +6,7 @@
 class example (
   Stdlib::Absolutepath $file = '/tmp/puppet-example',
   String[1] $content = 'Hello World!',
+  String[1] $foo = 'test',
 ) {
   file { $file:
     ensure  => file,
