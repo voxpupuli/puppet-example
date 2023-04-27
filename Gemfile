@@ -4,10 +4,11 @@
 source ENV['GEM_SOURCE'] || 'https://rubygems.org'
 
 group :test do
-  gem 'voxpupuli-test', '~> 5.4',   :require => false
+  gem 'voxpupuli-test', :git => 'https://github.com/voxpupuli/voxpupuli-test.git', :require => false
   gem 'coveralls',                  :require => false
   gem 'simplecov-console',          :require => false
   gem 'puppet_metadata', '~> 2.0',  :require => false
+  gem 'rspec-puppet', :git => 'https://github.com/alexjfisher/rspec-puppet.git', :branch => 'include_legacy_facts'
 end
 
 group :development do
