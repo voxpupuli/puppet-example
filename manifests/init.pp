@@ -14,4 +14,8 @@ class example (
     mode    => '0644',
     content => $content,
   }
+
+  notify { 'legacy_facts_check':
+    message => $facts['fqdn'],
+  }
 }
