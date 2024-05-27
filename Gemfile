@@ -3,6 +3,8 @@
 
 source ENV['GEM_SOURCE'] || 'https://rubygems.org'
 
+gem 'puppet-modulebuilder', git: 'https://github.com/bastelfreak/puppet-modulebuilder', ref: 'a52e02a822b8d596d0e2f0dc1ad18c22b1c1509c'
+
 group :test do
   gem 'voxpupuli-test', '~> 7.0',   :require => false
   gem 'coveralls',                  :require => false
