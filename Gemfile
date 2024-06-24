@@ -4,7 +4,8 @@
 source ENV['GEM_SOURCE'] || 'https://rubygems.org'
 
 group :test do
-  gem 'voxpupuli-test', '~> 7.0',   :require => false
+  gem 'rspec-puppet-facts', git: 'https://github.com/bastelfreak/rspec-puppet-facts', branch: 'foobaz', :require => false
+  gem 'voxpupuli-test', git: 'https://github.com/bastelfreak/voxpupuli-test', branch: 'foobaz', :require => false
   gem 'coveralls',                  :require => false
   gem 'simplecov-console',          :require => false
   gem 'puppet_metadata', '~> 3.5',  :require => false
