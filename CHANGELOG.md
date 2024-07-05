@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v0.4.0](https://github.com/voxpupuli/puppet-example/tree/v0.4.0) (2024-07-05)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-example/compare/v0.3.0...v0.4.0)
+
+**Breaking changes:**
+
+- Drop EoL CentOS 7/8 & RedHat 7; Add CentOS 9 [\#60](https://github.com/voxpupuli/puppet-example/pull/60) ([bastelfreak](https://github.com/bastelfreak))
+
+**Merged pull requests:**
+
+- modulesync 9.0.0-13-gb7d9d09 [\#61](https://github.com/voxpupuli/puppet-example/pull/61) ([rwaffen](https://github.com/rwaffen))
+
 ## [v0.3.0](https://github.com/voxpupuli/puppet-example/tree/v0.3.0) (2024-05-27)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-example/compare/v0.2.1...v0.3.0)
