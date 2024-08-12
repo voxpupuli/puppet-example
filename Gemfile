@@ -16,6 +16,8 @@ group :development do
 end
 
 group :system_tests do
+  gem 'beaker', git: 'https://github.com/bastelfreak/beaker/', branch: 'arch2'
+  gem 'beaker-docker', git: 'https://github.com/bastelfreak/beaker-docker/', branch: 'arch'
   gem 'voxpupuli-acceptance', '~> 3.0',  :require => false
 end
 
