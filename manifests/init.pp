@@ -5,7 +5,7 @@
 #   The content in the file
 class example (
   Stdlib::Absolutepath $file = '/tmp/puppet-example',
-  String[1] $content = 'Hello World!',
+  String[1] $content = $facts['networking']['fqdn'],
 ) {
   file { $file:
     ensure  => file,

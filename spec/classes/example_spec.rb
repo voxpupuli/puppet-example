@@ -8,7 +8,15 @@ describe 'example' do
       let(:facts) { os_facts }
 
       it { is_expected.to compile.with_all_deps }
-      it { is_expected.to contain_file('/tmp/puppet-example').with_content('Hello World!') }
+      #it { is_expected.to contain_file('/tmp/puppet-example').with_content('Hello World!') }
+    end
+    context 'with data' do
+
+      let :node do
+        'test.awesome.com'
+      end
+
+      it { is_expected.to contain_file('/tmp/puppet-example').with_content('test.awesome.com')}
     end
   end
 end
