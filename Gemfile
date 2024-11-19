@@ -17,6 +17,7 @@ end
 
 group :system_tests do
   gem 'voxpupuli-acceptance', '~> 3.0',  :require => false
+  gem 'beaker-docker', git: 'https://github.com/jay7x/beaker-docker.git', branch: 'fix_ssh', :require => false
 end
 
 group :release do
