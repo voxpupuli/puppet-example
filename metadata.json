@@ -19,6 +19,13 @@
   ],
   "operatingsystem_support": [
     {
+      "operatingsystem": "AlmaLinux",
+      "operatingsystemrelease": [
+        "8",
+        "9"
+      ]
+    },
+    {
       "operatingsystem": "Archlinux"
     },
     {
@@ -30,19 +37,43 @@
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "11"
+        "11",
+        "12"
+      ]
+    },
+    {
+      "operatingsystem": "Fedora",
+      "operatingsystemrelease": [
+        "40"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "8",
+        "9"
       ]
     },
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
-        "8"
+        "8",
+        "9"
+      ]
+    },
+    {
+      "operatingsystem": "Rocky",
+      "operatingsystemrelease": [
+        "8",
+        "9"
       ]
     },
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "20.04"
+        "20.04",
+        "22.04",
+        "24.04"
       ]
     }
   ]
