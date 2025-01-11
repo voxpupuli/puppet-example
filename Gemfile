@@ -7,7 +7,8 @@ group :test do
   gem 'voxpupuli-test', '~> 9.0',   :require => false
   gem 'coveralls',                  :require => false
   gem 'simplecov-console',          :require => false
-  gem 'puppet_metadata', '~> 4.0',  :require => false
+  #gem 'puppet_metadata', '~> 4.0',  :require => false
+  gem 'puppet_metadata', github: 'bastelfreak/puppet_metadata', branch: 'openvox'
 end
 
 group :development do
@@ -16,6 +17,7 @@ group :development do
 end
 
 group :system_tests do
+  gem 'beaker_puppet_helpers', github: 'bastelfreak/beaker_puppet_helpers', branch: 'openvox'
   gem 'voxpupuli-acceptance', '~> 3.0',  :require => false
 end
 
