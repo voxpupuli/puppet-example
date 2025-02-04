@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v0.6.0](https://github.com/voxpupuli/puppet-example/tree/v0.6.0) (2025-02-04)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-example/compare/v0.5.0...v0.6.0)
+
+**Merged pull requests:**
+
+- test release prep PR [\#95](https://github.com/voxpupuli/puppet-example/pull/95) ([bastelfreak](https://github.com/bastelfreak))
+- cleanup release prep action [\#93](https://github.com/voxpupuli/puppet-example/pull/93) ([bastelfreak](https://github.com/bastelfreak))
+- Release prep: use bot PAT to create release PR [\#91](https://github.com/voxpupuli/puppet-example/pull/91) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v0.5.0](https://github.com/voxpupuli/puppet-example/tree/v0.5.0) (2025-02-04)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-example/compare/v0.4.0...v0.5.0)
