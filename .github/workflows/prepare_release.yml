@@ -8,12 +8,6 @@ on:
         description: 'Module version to be released. Must be a valid semver string without leading v. (1.2.3)'
         required: false
 
-# The action needs more permissions in order to trigger CI runs
-# https://github.com/peter-evans/create-pull-request?tab=readme-ov-file#token
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   release_prep:
     uses: 'voxpupuli/gha-puppet/.github/workflows/prepare_release.yml@prep'
