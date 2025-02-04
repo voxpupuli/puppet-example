@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v0.5.0](https://github.com/voxpupuli/puppet-example/tree/v0.5.0) (2025-02-04)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-example/compare/v0.4.0...v0.5.0)
+
+**Breaking changes:**
+
+- Drop EoL Ubuntu 18.04 [\#68](https://github.com/voxpupuli/puppet-example/pull/68) ([bastelfreak](https://github.com/bastelfreak))
+
+**Implemented enhancements:**
+
+- Add more OSes \(Alma/RH/Rocky/OL 8-9, Ubuntu 22-24, Debian 12, Fedora 40\) [\#80](https://github.com/voxpupuli/puppet-example/pull/80) ([jay7x](https://github.com/jay7x))
+
+**Fixed bugs:**
+
+- Archlinux: Fix typo in metadata.json [\#71](https://github.com/voxpupuli/puppet-example/pull/71) ([bastelfreak](https://github.com/bastelfreak))
+
+**Merged pull requests:**
+
+- Release: Publish module to GitHub Release [\#88](https://github.com/voxpupuli/puppet-example/pull/88) ([bastelfreak](https://github.com/bastelfreak))
+- prepare\_release action: use token with write perms [\#84](https://github.com/voxpupuli/puppet-example/pull/84) ([bastelfreak](https://github.com/bastelfreak))
+- prepare release action: Make version input optional [\#83](https://github.com/voxpupuli/puppet-example/pull/83) ([bastelfreak](https://github.com/bastelfreak))
+- gha-puppet: Switch from v2-\>v3 [\#66](https://github.com/voxpupuli/puppet-example/pull/66) ([bastelfreak](https://github.com/bastelfreak))
+- add REFERENCE.md for testing the voxbox [\#64](https://github.com/voxpupuli/puppet-example/pull/64) ([rwaffen](https://github.com/rwaffen))
+- add Puppetfile for testing in the voxbox container ci [\#63](https://github.com/voxpupuli/puppet-example/pull/63) ([rwaffen](https://github.com/rwaffen))
+
 ## [v0.4.0](https://github.com/voxpupuli/puppet-example/tree/v0.4.0) (2024-07-05)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-example/compare/v0.3.0...v0.4.0)
