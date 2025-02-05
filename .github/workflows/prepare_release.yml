@@ -1,4 +1,7 @@
 ---
+# Managed by modulesync - DO NOT EDIT
+# https://voxpupuli.org/docs/updating-files-managed-with-modulesync/
+
 name: 'Prepare Release'
 
 on:
@@ -10,7 +13,7 @@ on:
 
 jobs:
   release_prep:
-    uses: 'voxpupuli/gha-puppet/.github/workflows/prepare_release.yml@prep'
+    uses: 'voxpupuli/gha-puppet/.github/workflows/prepare_release.yml@v3'
     with:
       version: ${{ github.event.inputs.version }}
       allowed_owner: 'voxpupuli'
