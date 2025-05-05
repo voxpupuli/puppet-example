@@ -2,7 +2,7 @@
 name: Cron
 
 on:
-  workflow_call:
+  workflow_dispatch:
   schedule:
     - cron: '0 1 * * *'
 
