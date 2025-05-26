@@ -26,7 +26,6 @@ end
 gem 'rake', :require => false
 gem 'facter', ENV['FACTER_GEM_VERSION'], :require => false, :groups => [:test]
 
-puppetversion = ENV['PUPPET_GEM_VERSION'] || [">= 7.24", "< 9"]
-gem 'puppet', puppetversion, :require => false, :groups => [:test]
+gem 'puppet', :require => false, :groups => [:test], :github => 'ekohl/puppet', :branch => 'add-legacy-gemspec', :glob => 'puppet.gemspec'
 
 # vim: syntax=ruby
