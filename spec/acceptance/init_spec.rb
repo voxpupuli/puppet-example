@@ -12,4 +12,16 @@ describe 'example' do
       end
     end
   end
+
+  describe 'with parameters' do
+    it_behaves_like 'an idempotent resource with debug' do
+      let(:manifest) do
+        <<-PUPPET
+        class { 'example':
+          content => 'hiiiiiiiiiiiiiii',
+        }
+        PUPPET
+      end
+    end
+  end
 end

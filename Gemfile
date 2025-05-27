@@ -16,7 +16,7 @@ group :development do
 end
 
 group :system_tests do
-  gem 'voxpupuli-acceptance', '~> 3.5',  :require => false
+  gem 'voxpupuli-acceptance', github: 'bastelfreak/voxpupuli-acceptance', branch: 'debug'
 end
 
 group :release do
