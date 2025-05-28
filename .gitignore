@@ -21,5 +21,6 @@
 .*.sw?
 /.yardoc/
 /Guardfile
+/.vscode/settings.json
 bolt-debug.log
 .rerun.json
