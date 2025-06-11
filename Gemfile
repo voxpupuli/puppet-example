@@ -24,7 +24,6 @@ end
 gem 'rake', :require => false
 gem 'facter', ENV['FACTER_GEM_VERSION'], :require => false, :groups => [:test]
 
-openvoxversion = ENV['PUPPET_GEM_VERSION'] || [">= 7.24", "< 9"]
-gem 'openvox', openvoxversion, :require => false, :groups => [:test]
+gem 'openvox', ENV.fetch('OPENVOX_GEM_VERSION', [">= 7.24", "< 9"]), :require => false, :groups => [:test]
 
 # vim: syntax=ruby
