@@ -256,7 +256,7 @@ The following strings are known to work:
 * centos9
 * almalinux8
 * almalinux9
-* fedora36
+* fedora41
 
 For more information and tips & tricks, see [voxpupuli-acceptance's documentation](https://github.com/voxpupuli/voxpupuli-acceptance#running-tests).
 
