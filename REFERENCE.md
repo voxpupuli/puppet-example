@@ -7,6 +7,7 @@
 ### Classes
 
 * [`example`](#example): An example class
+* [`example::profile_java`](#example--profile_java)
 
 ## Classes
 
@@ -36,4 +37,20 @@ Data type: `String[1]`
 The content in the file
 
 Default value: `'Hello World!'`
+
+### <a name="example--profile_java"></a>`example::profile_java`
+
+The example::profile_java class.
+
+#### Parameters
+
+The following parameters are available in the `example::profile_java` class:
+
+* [`version`](#-example--profile_java--version)
+
+##### <a name="-example--profile_java--version"></a>`version`
+
+Data type: `Enum['8', '11', '17', '21']`
+
+
 
