@@ -14,6 +14,7 @@ group :development do
 end
 
 group :system_tests do
+  gem 'beaker-docker', github: 'mpldr-pulls/beaker-docker', branch: 'master'
   gem 'voxpupuli-acceptance', '~> 4.0',  :require => false
 end
 
