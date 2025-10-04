@@ -16,6 +16,7 @@ end
 
 group :system_tests do
   gem 'voxpupuli-acceptance', '~> 4.0',  :require => false
+  gem 'beaker', github: 'bastelfreak/beaker', branch: 'windows'
 end
 
 group :release do
