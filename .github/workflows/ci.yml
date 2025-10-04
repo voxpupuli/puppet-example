@@ -22,4 +22,7 @@ permissions:
 jobs:
   puppet:
     name: Puppet
-    uses: voxpupuli/gha-puppet/.github/workflows/beaker.yml@v3
+    uses: voxpupuli/gha-puppet/.github/workflows/beaker.yml@4c3143516d0dae4241e04ceeb86f394dd6695f02
+    with:
+      beaker_hypervisor: none
+      acceptance_runs_on: windows-2025

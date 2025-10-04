@@ -19,62 +19,10 @@
   ],
   "operatingsystem_support": [
     {
-      "operatingsystem": "AlmaLinux",
+      "operatingsystem": "Windows",
       "operatingsystemrelease": [
-        "8",
-        "9"
-      ]
-    },
-    {
-      "operatingsystem": "Archlinux"
-    },
-    {
-      "operatingsystem": "CentOS",
-      "operatingsystemrelease": [
-        "9"
-      ]
-    },
-    {
-      "operatingsystem": "Debian",
-      "operatingsystemrelease": [
-        "11",
-        "12",
-        "13"
-      ]
-    },
-    {
-      "operatingsystem": "Fedora",
-      "operatingsystemrelease": [
-        "41"
-      ]
-    },
-    {
-      "operatingsystem": "OracleLinux",
-      "operatingsystemrelease": [
-        "8",
-        "9"
-      ]
-    },
-    {
-      "operatingsystem": "RedHat",
-      "operatingsystemrelease": [
-        "8",
-        "9"
-      ]
-    },
-    {
-      "operatingsystem": "Rocky",
-      "operatingsystemrelease": [
-        "8",
-        "9"
-      ]
-    },
-    {
-      "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [
-        "20.04",
-        "22.04",
-        "24.04"
+        "2022",
+        "2025"
       ]
     }
   ]
