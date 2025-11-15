@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v0.8.0](https://github.com/voxpupuli/puppet-example/tree/v0.8.0) (2025-11-15)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-example/compare/v0.7.0...v0.8.0)
+
+**Breaking changes:**
+
+- Replace fedora 40 with 41 [\#131](https://github.com/voxpupuli/puppet-example/pull/131) ([lelutin](https://github.com/lelutin))
+- Drop puppet, update openvox minimum version to 8.19 [\#127](https://github.com/voxpupuli/puppet-example/pull/127) ([TheMeier](https://github.com/TheMeier))
+
+**Implemented enhancements:**
+
+- add action to create git tags [\#140](https://github.com/voxpupuli/puppet-example/pull/140) ([bastelfreak](https://github.com/bastelfreak))
+- Add Debian 13 support [\#128](https://github.com/voxpupuli/puppet-example/pull/128) ([jcharaoui](https://github.com/jcharaoui))
+
 ## [v0.7.0](https://github.com/voxpupuli/puppet-example/tree/v0.7.0) (2025-07-18)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-example/compare/v0.6.0...v0.7.0)
