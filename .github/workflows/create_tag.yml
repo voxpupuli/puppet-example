@@ -15,7 +15,6 @@ jobs:
   release_prep:
     uses: 'voxpupuli/gha-puppet/.github/workflows/create_tag.yml@release'
     with:
-      version: ${{ github.event.inputs.version }}
       allowed_owner: 'voxpupuli'
       git_name: pccibot
       git_email: 12855858+pccibot@users.noreply.github.com
