@@ -12,7 +12,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  release_prep:
+  create_tag:
     uses: 'voxpupuli/gha-puppet/.github/workflows/create_tag.yml@release'
     with:
       allowed_owner: 'voxpupuli'
