@@ -19,6 +19,12 @@
   ],
   "operatingsystem_support": [
     {
+      "operatingsystem": "Amazonlinux",
+      "operatingsystemrelease": [
+        "2023"
+      ]
+    },
+    {
       "operatingsystem": "AlmaLinux",
       "operatingsystemrelease": [
         "8",
