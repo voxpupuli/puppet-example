@@ -5,7 +5,8 @@ source ENV['GEM_SOURCE'] || 'https://rubygems.org'
 
 group :test do
   gem 'voxpupuli-test', '~> 13.0',  :require => false
-  gem 'puppet_metadata', '~> 5.0',  :require => false
+  #gem 'puppet_metadata', '~> 5.0',  :require => false
+  gem 'puppet_metadata', github: 'bastelfreak/puppet_metadata', branch: 'amazonlinux'
 end
 
 group :development do
@@ -15,6 +16,7 @@ end
 
 group :system_tests do
   gem 'voxpupuli-acceptance', '~> 4.0',  :require => false
+  gem 'beaker-hostgenerator', github: 'bastelfreak/beaker-hostgenerator', branch: 'amazonlinux'
 end
 
 group :release do
