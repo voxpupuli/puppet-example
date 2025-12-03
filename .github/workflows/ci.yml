@@ -23,3 +23,9 @@ jobs:
   puppet:
     name: Puppet
     uses: voxpupuli/gha-puppet/.github/workflows/beaker.yml@v4
+
+  foo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: env
