@@ -28,7 +28,7 @@ on:
           When unset, we will generate a list of supported collections based on metadata.json.
         required: false
         type: string
-      beaker_version:
+      beaker_staging_version:
         description: |-
           The package version we want to test.
           Only used for collection = staging
@@ -47,6 +47,6 @@ jobs:
     name: Puppet
     uses: voxpupuli/gha-puppet/.github/workflows/beaker.yml@staging
     with:
+      beaker_collection: ${{ inputs.beaker_collection }}
       beaker_staging_url: ${{ inputs.beaker_staging_url }}
-      beaker_collection: ${{ inputs.beaker_collecton }}
-      beaker_version: ${{ inputs.beaker_version }}
+      beaker_staging_version: ${{ inputs.beaker_staging_version }}
