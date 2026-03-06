@@ -4,7 +4,7 @@
 source ENV['GEM_SOURCE'] || 'https://rubygems.org'
 
 group :test do
-  gem 'voxpupuli-test', '~> 13.0',  :require => false
+  gem 'voxpupuli-test', '~> 14.0',  :require => false
   gem 'puppet_metadata', '~> 6.0',  :require => false
 end
 
@@ -14,13 +14,11 @@ group :development do
 end
 
 group :system_tests do
-  gem 'beaker_puppet_helpers', github: 'bastelfreak/beaker_puppet_helpers', branch: 'staging'
-  #gem 'voxpupuli-acceptance', '~> 4.0',  :require => false
-  gem 'voxpupuli-acceptance', github: 'bastelfreak/voxpupuli-acceptance', branch: 'staging'
+  gem 'voxpupuli-acceptance', '~> 4.0',  :require => false
 end
 
 group :release do
-  gem 'voxpupuli-release', '~> 5.0',  :require => false
+  gem 'voxpupuli-release', '~> 5.3',  :require => false
 end
 
 gem 'rake', :require => false
