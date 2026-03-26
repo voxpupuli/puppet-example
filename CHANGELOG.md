@@ -12,6 +12,10 @@ These should not affect the functionality of the module.
 
 - CI: use PAT during tag creation [\#159](https://github.com/voxpupuli/puppet-example/pull/159) ([bastelfreak](https://github.com/bastelfreak))
 
+**Merged pull requests:**
+
+- CI: use ssh key to authenticate to github [\#161](https://github.com/voxpupuli/puppet-example/pull/161) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v0.12.0](https://github.com/voxpupuli/puppet-example/tree/v0.12.0) (2026-03-26)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-example/compare/v0.11.0...v0.12.0)
