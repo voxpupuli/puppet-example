@@ -16,7 +16,6 @@ permissions:
 jobs:
   release:
     name: Release
-    environment: release
     uses: voxpupuli/gha-puppet/.github/workflows/release.yml@v4
     with:
       allowed_owner: 'voxpupuli'
