@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v0.13.3](https://github.com/voxpupuli/puppet-example/tree/v0.13.3) (2026-03-26)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-example/compare/v0.13.2...v0.13.3)
+
+**Merged pull requests:**
+
+- fix typos in workflows [\#169](https://github.com/voxpupuli/puppet-example/pull/169) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v0.13.2](https://github.com/voxpupuli/puppet-example/tree/v0.13.2) (2026-03-26)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-example/compare/v0.13.1...v0.13.2)
