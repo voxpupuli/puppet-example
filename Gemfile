@@ -18,8 +18,7 @@ group :system_tests do
 end
 
 group :release do
-  #gem 'voxpupuli-release', '~> 5.3',  :require => false
-  gem 'voxpupuli-release', github: 'bastelfreak/voxpupuli-release', branch: 'rel'
+  gem 'voxpupuli-release', '~> 5.3',  :require => false
 end
 
 gem 'rake', :require => false
