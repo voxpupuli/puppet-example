@@ -48,5 +48,5 @@ jobs:
     uses: voxpupuli/gha-puppet/.github/workflows/beaker.yml@staging
     with:
       beaker_staging_url: ${{ inputs.beaker_staging_url }}
-      beaker_collection: ${{ inputs.beaker_collecton }}
+      beaker_collection: ${{ inputs.beaker_collection }}
       beaker_staging_version: ${{ inputs.beaker_staging_version }}
