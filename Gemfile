@@ -15,9 +15,7 @@ group :development do
 end
 
 group :system_tests do
-  #gem 'voxpupuli-acceptance', '~> 4.0',  :require => false
-  gem 'voxpupuli-acceptance', github: 'bastelfreak/voxpupuli-acceptance', branch: 'staging'
-  gem 'beaker_puppet_helpers', github: 'bastelfreak/beaker_puppet_helpers', branch: 'staging'
+  gem 'voxpupuli-acceptance', '~> 4.4',  :require => false
 end
 
 group :release do
