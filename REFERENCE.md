@@ -7,6 +7,7 @@
 ### Classes
 
 * [`example`](#example): An example class
+* [`example::test`](#example--test)
 
 ## Classes
 
@@ -36,4 +37,8 @@ Data type: `String[1]`
 The content in the file
 
 Default value: `'Hello World!'`
+
+### <a name="example--test"></a>`example::test`
+
+The example::test class.
 
