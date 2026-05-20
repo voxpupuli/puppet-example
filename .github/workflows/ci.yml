@@ -35,6 +35,7 @@ on:
         required: false
         type: string
 
+
 concurrency:
   group: ${{ github.ref_name }}
   cancel-in-progress: true
@@ -45,8 +46,10 @@ permissions:
 jobs:
   puppet:
     name: Puppet
-    uses: voxpupuli/gha-puppet/.github/workflows/beaker.yml@v4
+    uses: TheMeier/gha-puppet/.github/workflows/beaker.yml@custom_runner_and_voxbox
     with:
       beaker_staging_url: ${{ inputs.beaker_staging_url }}
       beaker_collection: ${{ inputs.beaker_collection }}
       beaker_staging_version: ${{ inputs.beaker_staging_version }}
+      unit_use_container: true
+      unit_runs_on: 'runnerset-voxpupuli-k8s'
