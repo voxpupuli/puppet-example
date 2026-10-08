@@ -36,4 +36,3 @@ Data type: `String[1]`
 The content in the file
 
 Default value: `'Hello World!'`
-
